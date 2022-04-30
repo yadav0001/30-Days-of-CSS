@@ -1,0 +1,127 @@
+/* ========================================
+
+    CODE YOUR STYLES BELOW!
+
+  ====================================== */
+
+.pricing-table::after{
+    display: block;
+    content: "";
+    clear:both;
+}
+.pricing-table>div{
+    float: left;
+}
+.pricing-block{
+    min-width: 45%;
+    /* display: inline-block; */
+    background: white;
+    border-radius: 10px;
+    text-align: center;
+    margin-right: 2%;
+}
+
+.pricing-header{
+    padding:30px 20px 40px 20px;
+    height: auto;
+    text-transform: uppercase;
+}
+
+.pricing-heading{
+    font-size: 1.4rem;
+    font-weight: bold;
+
+}
+.pricing-price{
+    color:#777;
+}
+.pricing-price > span{
+    display: inline-block;
+}
+.pricing-price__value{
+    font-size:5rem;
+    margin:0;
+    line-height: 1;
+}
+.pricing-price__currency{
+    font-size: 2rem;
+    font-weight: bold;
+    vertical-align: top;
+    line-height: 1;
+    margin-top: 10px;
+    opacity: 0.6;
+}
+
+.pricing-price__duration{
+    vertical-align: top;
+    line-height: 1;
+    margin-top: 10px;
+    opacity: 0.6;
+}
+
+.pricing-features li{
+    display:block;
+    padding:10px 20px;
+    margin: 0;
+}
+
+.pricing-features li:nth-child(odd){
+    background: rgba(0,0,0,0.025);
+}
+
+.pricing-footer{
+    padding:20px;
+    background-color: #333;
+    margin-top: 40px;
+    border-radius: 0  0 10px 10px;
+}
+
+.pricing-footer a{
+    color:white;
+    border:0;
+    text-transform: uppercase;
+}
+
+.pricing-popular .pricing-header{
+    padding:50px 20px 40px 20px;
+}
+
+ .pricing-popular .pricing-footer{
+    margin-top: 60px;
+    background-color: red;
+    opacity: 0.5;
+}
+ 
+.pricing-popular{
+    margin-top: -20px;
+}
+
+.pricing-popular .pricing-price{
+    color: red;
+    opacity: 0.5;
+}
+
+@media screen and (max-width:1023px){
+
+    .pricing-table>div{
+        float: none;
+        width:100%;
+        margin-bottom: 40px;
+    }
+    .pricing-body{
+        max-width: 100%;
+        overflow:auto;
+        white-space: nowrap;
+     }
+    .pricing-features li{
+        display:inline-block;
+        /* vertical-align: middle; */
+       
+    }
+    .pricing-footer{
+        margin-top: 0;
+    }
+    .pricing-popular .pricing-footer{
+        margin-top: 30px;
+    }
+}

@@ -1,0 +1,11 @@
+/* ========================================
+
+    Great resource for creating custom
+    masking shapes in CSS3:
+    http://bennettfeely.com/clippy/
+
+   ====================================== */
+
+   .clip-image-4{
+       clip-path: polygon(40% 0,40% 20%,0 20%,0 80%,40% 80%,40% 100%,100% 50% );
+   }

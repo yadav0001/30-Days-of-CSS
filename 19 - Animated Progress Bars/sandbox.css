@@ -1,0 +1,16 @@
+/* ========================================
+
+    CODE YOUR STYLES BELOW!
+
+   ====================================== */
+
+   .animation-bar-1{
+       position:relative;
+       display: block;
+       height:16px;
+       width:100%;
+       /* font-size: 16px; */
+       background-color: grey;
+       border-radius:30px;
+       padding:5px;
+   }

@@ -1,0 +1,43 @@
+/* ========================================
+
+    CODE YOUR STYLES BELOW!
+
+   ====================================== */
+
+   .sticky-sidebar-lesson{
+       width:80%;
+       margin:0 auto;
+   }
+   .sticky-sidebar-lesson::after{
+       display:block;
+       content:"";
+       clear:both;
+   }
+
+    .sandbox{
+       width:60%;
+       margin:0 0 40px 0;
+       float:left;
+   }
+
+   .sticky-sidebar{
+       box-sizing: border-box;
+       background: #e7eef1;
+       padding: 40px 40px 60px;
+       border-radius: 2px;
+       position: fixed;
+       right:5%;
+       width:36%;
+       /* float:right; */
+   }
+
+   @media screen and (max-width:800px){
+        .sticky-sidebar{
+           position:static;
+           clear: both;
+           width:100%;
+        }
+        .sandbox{
+            width:100%;
+        }
+   }

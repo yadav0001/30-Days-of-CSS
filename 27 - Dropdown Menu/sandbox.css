@@ -1,0 +1,43 @@
+/* ========================================
+
+    CODE YOUR STYLES BELOW!
+
+   ====================================== */
+    .dropdown{
+        /* display: inline-block; */
+        position: relative;
+        z-index: 99;
+    }
+
+   .dropdown__hover{
+       /* display: inline-block; */
+       padding:0.6rem;
+       background-color: #323b40;
+       color:white;
+       border:none;
+       cursor: pointer;
+   }
+   .dropdown__hover:hover{
+       background-color: #222222;
+   }
+   .dropdown__menu{
+       display: none;
+       position: absolute;
+       min-width: 200px;
+       background: white; 
+   }
+   .dropdown__menu a{
+       display: block;
+       padding: 10px;
+       border-width: 0;
+       border-top:1px solid #e0e0e0;
+   }
+   .dropdown:hover .dropdown__menu{
+        display: block;
+        
+   }
+
+   .dropdown__menu a:hover{
+    background-color:#f0f0f0;
+    color: #323b40;
+   }

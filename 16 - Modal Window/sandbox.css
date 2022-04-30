@@ -1,0 +1,34 @@
+/* ========================================
+
+    CODE YOUR STYLES BELOW!
+
+   ====================================== */
+
+   .overlay{
+       background: #000000;
+       position:fixed;
+       top:0;
+       right:0;
+       width:100%;
+       height:100%;
+       z-index: 101;
+       visibility: hidden;
+   }
+   .modal{
+       position: fixed;
+       background: white;
+       top:30%;
+       left:15%;
+       width:100%;
+       max-width: 650px;
+       visibility: hidden;
+       padding: 20px 20px 40px ;
+   }
+
+   input[type="checkbox"]:checked ~ .overlay{
+       visibility: visible;
+   }
+   input[type="checkbox"]:checked ~ .modal{
+    visibility: visible;
+    z-index: 102;
+}

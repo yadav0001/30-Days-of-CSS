@@ -1,0 +1,103 @@
+/* ========================================
+
+    CODE YOUR STYLES BELOW!
+
+   ====================================== */
+
+/************ Layout1 ************/
+
+.layout1 article{
+    width: 58%;
+    float:left;
+}
+.layout1 aside{
+   width:40%;
+   float:right;
+}
+
+.layout1 footer{
+    clear:both;
+}
+
+/********** Layout2 ***********/
+
+.layout2 .logo{
+    width:20%;
+    float: left;
+    margin:0;
+}
+
+.layout2 nav{
+    width: 78%;
+    float: right;
+    margin:0;
+}
+
+.layout2 header::after{
+    display:block;
+    content:"";
+    clear:both
+}
+
+.layout2 .sidenav{
+    width:23%;
+   float:left;
+}
+.layout2 article{
+    width:50%;
+    float:left;
+    margin-left:2%;
+}
+
+.layout2 .sidebar{
+    float:right;
+    width:23%;
+}
+
+.layout2 footer{
+    clear:both;
+}
+
+
+/********** Layout 3 *************/
+
+.layout3 header .logo{
+    width:20%;
+    float:right;
+}
+
+.layout3 header nav{
+    width:78%;
+}
+
+.layout3 article{
+    width:32%;
+   float:left;
+   margin: 0 2% 0 0;
+}
+.layout3 article:last-child{
+    margin:0;
+}
+
+.layout3 .articles::after{
+    display: block;
+    content:"";
+    clear:both;
+}
+
+@media screen and (max-width:768px){
+    .layout1 article,
+  .layout1 aside,
+  .layout2 header .logo,
+  .layout2 header nav,
+  .layout2 article,
+  .layout2 aside.sidenav,
+  .layout2 aside.sidebar,
+  .layout3 article,
+  .layout3 aside,
+  .layout3 header .logo,
+  .layout3 header nav{
+        float:none;
+        width:100%;
+    }
+}

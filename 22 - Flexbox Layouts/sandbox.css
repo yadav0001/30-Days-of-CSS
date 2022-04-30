@@ -1,0 +1,62 @@
+/* ========================================
+
+    CODE YOUR STYLES BELOW!
+
+   ====================================== */
+    /********** Layout 1 **********/
+   .layout1 main{
+    display: flex;
+    gap:10px;
+    
+   }
+   .layout1 article {
+        flex:5;
+       
+   }
+   .layout1 aside {
+    flex:3;
+   }
+
+   /********** Layout 2 ***********/
+   .layout2 header{
+       display: flex;
+       gap:10px;
+   }
+   .layout2 .logo{
+       flex:1;
+   }
+   .layout2 nav{
+       flex:12;
+   }
+
+   .layout2 main{
+    display: flex;
+    gap: 10px;
+   }
+
+   .layout2 aside {
+       flex: 2;
+   }
+   .layout2 article{
+       flex:5;
+   }
+
+   /*********** Layout 3 ***************/
+
+   .layout3 header{
+       display: flex;
+       gap:10px;
+   }
+   .layout3 .logo{
+       order:1;
+       flex:1;
+   }
+   .layout3 nav{
+       flex:6;
+   }
+
+   .layout3 .articles{
+       display: flex;
+       gap:10px;
+   }
+   
